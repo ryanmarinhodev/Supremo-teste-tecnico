@@ -96,11 +96,10 @@ const HomeNotification = () => {
   // Monitorar o scroll da página para exibir ou ocultar a seta
   useEffect(() => {
     const handleScroll = () => {
-      // Verifique se a rolagem está no topo
-      if (window.scrollY < 50) {
-        setShowArrow(true); // Exibe a seta se o scroll for muito baixo
+      if (window.scrollY < window.innerHeight) {
+        setShowArrow(true); // Mostrar seta quando o usuário está no topo
       } else {
-        setShowArrow(false); // Oculta a seta ao rolar para baixo
+        setShowArrow(false); // Esconder seta quando o usuário rolar para baixo
       }
     };
 
