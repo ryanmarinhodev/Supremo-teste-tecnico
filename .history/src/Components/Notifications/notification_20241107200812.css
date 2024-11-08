@@ -1,0 +1,293 @@
+.dashboard-container {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f8f9fa;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #343a40;
+    color: #fff;
+    height: 100vh;
+  }
+  
+.logo {
+    width: 130px;
+    display: flex;
+    margin-left: 10px;
+}
+
+  .sidebar h4 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .sidebar .nav-link {
+    color: #ced4da;
+    padding: 10px;
+    font-weight: 500;
+  }
+  
+  .sidebar .nav-link:hover,
+  .sidebar .nav-link.active {
+    background-color: #495057;
+    color: #fff;
+    border-radius: 4px;
+  }
+  
+  .content {
+    flex-grow: 1;
+    padding: 20px 40px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  .table {
+    margin-top: 20px;
+  }
+  
+  button {
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  }
+  
+  button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+
+  /* Responsividade: Oculta a sidebar e ajusta o conteúdo em telas menores */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    transform: translateX(-100%);
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+  }
+
+  .content {
+    margin-left: 0;
+    padding: 20px;
+  }
+}
+
+/* Botão de alternância da sidebar */
+.sidebar-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-toggle {
+    display: block;
+    background-color: #343a40;
+    color: #fff;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1100;
+  }
+}
+
+.page-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #343a40;
+}
+
+/* Ajuste da fonte do título em telas pequenas */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Barra de busca e botão */
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo para a tabela */
+.table {
+  margin-top: 20px;
+}
+
+button {
+  transition: background-color 0.3s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+@media (max-width: 768px) {
+    .sidebar {
+      width: 100%;
+      height: auto;
+      transform: translateX(-100%);
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  
+    .sidebar.active {
+      transform: translateX(0);
+    }
+  
+    .content {
+      margin-left: 0;
+      padding: 20px;
+    }
+  }
+  
+  .sidebar-toggle {
+    display: none;
+  }
+  
+  @media (max-width: 768px) {
+    .sidebar-toggle {
+      display: block;
+      background-color: #343a40;
+      color: #fff;
+      position: fixed;
+      top: 10px;
+      left: 10px;
+      z-index: 1100;
+    }
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #343a40;
+  }
+  
+  @media (max-width: 768px) {
+    .page-title {
+      font-size: 1.5rem;
+    }
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para a tabela */
+  .table {
+    margin-top: 20px;
+  }
+  
+  button {
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+  }
+  
+  button:hover {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  }
+
+  .footer {
+    background-color: #1c1e22; /* Cor de fundo escura e elegante */
+    color: #f8f9fa; /* Texto em cor clara para bom contraste */
+    text-align: center; /* Centraliza o texto */
+    padding: 40px 20px; /* Espaçamento em cima e embaixo */
+    position: relative; /* Para posicionamento */
+    bottom: 0; /* Fica fixo na parte inferior da página */
+    width: 100%; /* Largura total */
+    box-shadow: 0 -1px 20px rgba(0, 0, 0, 0.5); /* Sombra mais pronunciada */
+    border-top: 4px solid #3498db; /* Linha superior mais grossa para um toque moderno */
+}
+
+.footer-content {
+    max-width: 1200px; /* Limita a largura do conteúdo */
+    margin: auto; /* Centraliza o conteúdo */
+    display: flex; /* Usa Flexbox para layout */
+    flex-direction: column; /* Coloca os itens em coluna */
+    align-items: center; /* Centraliza os itens horizontalmente */
+}
+
+.footer-logo {
+    font-size: 2em; /* Tamanho da fonte do logo aumentado */
+    font-weight: bold; /* Negrito para destaque */
+    margin-bottom: 10px; /* Espaçamento abaixo do logo */
+    color: #3498db; /* Cor do logo */
+    text-transform: uppercase; /* Para dar um toque mais moderno */
+}
+
+.footer-nav {
+    margin-bottom: 10px; /* Espaçamento abaixo da nav */
+}
+
+.footer-nav a {
+    color: #f8f9fa; /* Cor dos links */
+    text-decoration: none; /* Remove sublinhado */
+    margin: 0 15px; /* Espaçamento entre os links */
+    transition: color 0.3s, transform 0.3s; /* Efeito de transição suave */
+}
+
+.footer-nav a:hover {
+    color: #3498db; /* Cor ao passar o mouse */
+    transform: scale(1.1); /* Efeito de aumento ao passar o mouse */
+}
+
+.portfolio-icon {
+    margin-right: 5px; /* Espaçamento à direita do ícone do portfólio */
+    vertical-align: middle; /* Alinha o ícone com o texto */
+}
+
+.portfolio-text {
+    font-weight: bold; /* Deixa o texto do portfólio em negrito */
+}
+
+.footer-social {
+    margin: 10px 0; /* Espaçamento para ícones sociais */
+}
+
+.footer-social a {
+    color: #f8f9fa; /* Cor dos ícones */
+    margin: 0 10px; /* Espaçamento entre os ícones */
+    transition: color 0.3s; /* Efeito de transição suave */
+}
+
+.footer-social a:hover {
+    color: #3498db; /* Cor ao passar o mouse nos ícones sociais */
+}
+
+.footer-copy {
+    font-size: 0.9em; /* Tamanho da fonte menor para copyright */
+    margin: 0; /* Remove margens */
+    color: #adb5bd; /* Cor do texto de copyright mais suave */
+}
+
+.footer-note {
+  font-size: 1em; /* Tamanho da fonte da nota aumentada */
+  color: #00aeff; /* Cor amarela para destacar */
+  margin-top: 10px; /* Espaçamento acima da nota */
+  font-weight: bold; /* Deixa o texto em negrito */
+  padding: 10px; /* Espaçamento interno */
+  border: 2px solid #3498db; /* Borda azul para destaque */
+  border-radius: 8px; /* Bordas arredondadas */
+  background-color: rgba(52, 152, 219, 0.1); /* Fundo leve azul claro */
+  transition: transform 0.3s; /* Transição suave para efeito hover */
+}
+
+.footer-note:hover {
+  transform: scale(1.05); /* Efeito de aumento ao passar o mouse */
+}

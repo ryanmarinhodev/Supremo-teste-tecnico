@@ -1,0 +1,39 @@
+:root {
+    --primary-color: #203d5c;
+    --secondary-color: #adb5bd;
+    --hover-color: #182533;
+    --background-overlay: rgba(0, 0, 0, 0.4);
+    --box-shadow: 0 4px 10px rgba(47, 84, 122, 0.3);
+}
+
+/* Fundo com imagem de alta qualidade e sobreposição */
+.login-container {
+    background: url('https://wallpapers.com/images/hd/4k-architecture-yellow-glass-building-6d7nbmyltxlyxxv8.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.login-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--background-overlay);
+    z-index: 1;
+}
+
+/* Card de login estilizado com animação e borda elegante */
+.login-card {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: var(--box-shadow);
+    borde

@@ -1,0 +1,27 @@
+.notification-list {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .notification-card {
+    background-color: #f9f9f9;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .notification-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .notification-title {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .notification-message {
+    margin: 5px 0;
+  }
+  

@@ -1,0 +1,50 @@
+/* Fundo com imagem */
+.login-container {
+    background: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fpt.pngtree.com%2Ffree-backgrounds-photos%2Fpr%25C3%25A9dio-comercial-pictures&psig=AOvVaw3_J2E93KJ-nAK9UXCaS0LY&ust=1731083696537000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCKCp17fTyokDFQAAAAAdAAAAABAE') no-repeat center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+/* Card de login estilizado */
+.login-card {
+    width: 500px;
+    max-width: 1000px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.text-muted {
+    color: aliceblue;
+}
+
+/* Logo */
+.logo {
+    width: 130px;
+    height: auto;
+}
+
+/* Input estilizado com labels flutuantes */
+.form-control {
+    border-radius: 6px;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Botão de login */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Botão de voltar */
+.btn-outline-secondary {
+    border-radius: 6px;
+}
